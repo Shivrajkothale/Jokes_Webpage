@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke WebPage</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-center">
+
+    <header class="bg-primary text-white py-4 mb-4">
+        <h1 class="mb-0">Jokes Application</h1>
+    </header>
+
+    <section class="container">
+        <h2 class="mb-3">Welcome to the Jokes Application</h2>
+        <p class="mb-4">Click the button below to fetch a random joke!</p>
+        
+        <button id="fetch-joke" class="btn btn-success btn-lg mb-4" onclick="fetchJoke()">Fetch Joke</button>
+        
+        <div id="joke-display" class="alert alert-info fs-5 p-4" role="alert" style="min-height: 100px;">
+        </div>
+    </section>  
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 Jokes API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
